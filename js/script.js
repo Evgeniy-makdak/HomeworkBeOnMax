@@ -2,7 +2,8 @@ const menuItems = document.querySelectorAll(".menu-item"),
   menu = document.querySelector(".menu"),
   body = document.querySelector("body"),
   adv = document.querySelector(".adv"),
-  column = document.querySelectorAll(".column");
+  column = document.querySelectorAll(".column"),
+  title = document.querySelector(".title");
 
 menu.insertBefore(menuItems[2], menuItems[1]);
 const menuItemFive = document.createElement("li");
@@ -11,3 +12,4 @@ menuItemFive.classList.add("menu-item");
 menu.appendChild(menuItemFive);
 body.style.background = "url(img/apple_true.jpg) center no-repeat";
 column[1].removeChild(adv);
+title.textContent = "Мы продаем только подлинную технику Apple";
